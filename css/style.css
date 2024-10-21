@@ -1,0 +1,83 @@
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'nd nd nd nd nd nd nd nd'
+        'hd hd hd hd hd hd hd hd'
+        'td td td td td td td td'
+        'sd sd sd sd sd sd sd sd'
+        'fd fd fd fd fd fd fd fd';
+}
+
+#navDiv {
+    grid-area: nd;
+}
+
+#headerDiv {
+    grid-area: hd;
+}
+
+#tagDiv {
+    grid-area: td;
+}
+
+#skillsDiv {
+    grid-area: sd;
+}
+
+#footDiv {
+    grid-area: fd;
+}
+
+@media screen and (max-width: 600px) {
+    .grid-container {
+        display: grid;
+        grid-gap: 16px;
+        grid-template-areas:
+        'nd nd nd nd nd nd nd nd'
+        'hd hd hd hd hd hd hd hd'
+        'td td td td td td td td'
+        'sd sd sd sd sd sd sd sd'
+        'fd fd fd fd fd fd fd fd';
+    }
+}
+
+.navbar-brand {
+    display: flex;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9; /* Lighter background */
+    color: #333; /* Darker text color */
+}
+
+.container-fluid {
+    padding: 10px;
+}
+.grid-container {
+    margin-bottom: 10px;
+}
+#skillsDiv, #footDiv {
+    background-color: #e9ecef; /* Light gray sections */
+    color: #333; /* Darker text */
+    padding: 9px;
+}
+
+#navDiv {
+    background-color: #0d6efd; /* Clean blue for navbar */
+}
+
+#tagline {
+    background-color: #0d6efd; /* Match the blue color */
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact page</title>
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bootstrap-5.3.3-dist/css/bootstrap.css" rel="stylesheet">
+    <link href="../bootstrap-5.3.3-dist/css/bootstrap-grid.css" rel="stylesheet">
+    <link href="../bootstrap-5.3.3-dist/css/bootstrap-grid.min.css" rel="stylesheet">
+    <style>
+        form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="submit"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+input[type="submit"]{
+    background-color: blue;
+}
+    </style>
+</head>
+<body style="background-color: aliceblue">
+        <div class="container-fluid">
+    <div class="grid-container" style="padding: 5px">
+        <div id="navDiv" style="background-color: lightgreen">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#form">Contact me</a>
+    <div class="navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="navbar-brand" aria-current="page" href="../index.html">Home</a>
+      </div>
+      </div>
+  </div>
+</nav>
+    </div>
+    <div>
+        <form method="post" id="form">
+            <label>Name:</label>
+            <input type="text" placeholder="Enter name" name="name">
+            <label>Email:</label>
+            <input type="email" placeholder="abc@gmail.com" name="email">
+            <label>Phone Number:</label>
+            <input type="tel" placeholder="0711111111" name="tel">
+            <label>Message:</label>
+            <input type="text" placeholder="Write message here" name="message">
+
+            <button type="submit" style="background-color: blue; padding: 12px;color: white">Submit</button>
+        </form>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
